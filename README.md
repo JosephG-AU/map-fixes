@@ -25,3 +25,12 @@ Priorities:
 Chrome desktop (1440 x 1000) and phone viewport (390 x 844), including a fresh touch-enabled context. The report describes the verification depth and limitations of each area. Real-device gestures, comprehensive accessibility, every item/subfilter, and game-world data accuracy were not validated.
 
 JSON backups and the note export contain isolated test data, including the test pin named `UX test base`. No website source code or live server records were changed.
+
+## Navigation design concepts
+
+Three AI-generated visual alternatives using the existing map as a reference. These are design mockups, not implemented or tested navigation changes.
+
+- [Download all three images as a ZIP](ux-review-enshrouded/enshrouded-navigation-concepts.zip)
+- [Option 1: Grouped sidebar (recommended)](ux-review-enshrouded/navigation-concepts/01-grouped-sidebar.png)
+- [Option 2: Horizontal menu](ux-review-enshrouded/navigation-concepts/02-horizontal-menu.png)
+- [Option 3: Compact navigation rail](ux-review-enshrouded/navigation-concepts/03-compact-navigation-rail.png)
