@@ -1,0 +1,833 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Enshrouded map — 50 interaction UX review</title><style>body{font:16px/1.55 system-ui;background:#111817;color:#e9eeea;max-width:1100px;margin:40px auto;padding:0 24px}h1,h2{line-height:1.2;color:#b8e56f}a{color:#b8dcff}table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;vertical-align:top;padding:12px;border:1px solid #46524a}th{background:#24332b}img{max-width:100%;height:auto;border:1px solid #46524a}small{color:#bdc9bf}.card{background:#1c2821;padding:18px;margin:18px 0}li{margin-bottom:10px}</style><h1>Enshrouded map: 50 interaction UX review</h1><p><a href="https://gameguides101.com/enshrouded-map/">Live map reviewed</a> · 4 November 2026</p><div class="card"><b>Verdict:</b> A capable, feature-rich planning tool whose interface is harder to learn than its core tasks require. Strongest for returning desktop players; mobile layout, feature discovery and quest data presentation need the most attention.</div><h2>Method and limits</h2><p>One automated expert walkthrough covering 50 numbered interaction scenarios, with follow-up verification where needed. This is not research with 50 people. Chrome headless, desktop 1440 × 1000 and phone viewport 390 × 844; a fresh touch-enabled mobile context was also inspected. T3 preview and the alternate browser host were unavailable, so local Playwright controlled Chrome. No site code or live server records were edited. Notes, pins and progress tests used an isolated browser profile.</p><p>No real-device gesture testing, full screen-reader audit, game-world coordinate validation, broad browser matrix, network-throttling benchmark, or comprehensive testing of every item/subfilter. Native folder picking, recipes workflow, note import, populated diary round-trip, circle marks and quest-completion persistence were not validated. Map export/import used a largely empty progress file; a later export confirmed pin persistence. Layer selectors were exercised; rendering fidelity was not judged across every tile. An initial drag was executed but its displacement was not measured. No pageerror events were recorded in the resumed session; this does not establish error-free operation.</p><h2>Strengths</h2><ul><li><b>Breadth:</b> Map icons, creatures, analysis, armour, weapons/gems, diary, quests, notes and backups are integrated.</li><li><b>Search:</b> Iron returns four suggestions including Iron Ore deposits with 2,223 location records; a nonsense query gives No mapped suggestions found.</li><li><b>Customisation:</b> Five map views are exposed. Layer selection, larger icons, congestion adjustment, category reordering and sidebar hiding respond to interaction.</li><li><b>Progress portability:</b> Map JSON export and re-import worked. Import explicitly reports merging. Notes saved, downloaded as TXT and survived reload; the custom House pin survived reload and appeared in a later export.</li><li><b>Planning:</b> Analysis renders region spawn counts and damage/weakness charts; level and weapon-handling inputs respond. Creatures exposes attack-type and heatmap tools.</li><li><b>Basic accessibility:</b> Main controls have accessible names; Tab moved from Zoom in to Zoom out and Enter activated it. Canvas is focusable and help describes arrow-key and +/- support. No full accessibility compliance claim.</li></ul><h2>Weaknesses and recommended fixes</h2><table><tr><th>Priority</th><th>Finding and evidence</th><th>Recommended improvement</th></tr><tr><td>High</td><td><b>Mobile map area is cramped</b><br>At 390 × 844, the expanded sidebar occupies much of the screen; the toolbar, view selector and display menu overlay the upper map. Hiding the sidebar improves the view.</td><td>Start mobile with the map dominant and filters in a drawer; combine view/display tools into a compact menu.</td></tr><tr><td>High</td><td><b>Default map is visually busy</b><br>The initial desktop map has many competing symbols and overlapping labels. Icon size and congestion controls exist but require discovery.</td><td>Use a calmer default, clearer clustering and task presets such as Find resources, Travel and Hunt.</td></tr><tr><td>High</td><td><b>Quest data looks unfinished</b><br>The list contains 186 entries, including repeated names such as A Beehive Smoker and entries labelled Location: Not linked in map data. Internal-looking labels include Steppes and ChineseNewYearTrader.</td><td>Group or explain quest variants, use player-facing names, and distinguish mapped quests from entries without locations.</td></tr><tr><td>Medium</td><td><b>Important features are concealed</b><br>Creatures, Analysis, Armour, diary, quests, notes and backups sit behind Map View Options, which initially shows Map Icons.</td><td>Rename it Map tools and make the selected workspace and alternatives easier to discover.</td></tr><tr><td>Medium</td><td><b>Production copy includes test/debug wording</b><br>The map footer links Test creature page: Fell Thunderbrute. Analysis says Springlands is selected for the first test. Help contains fixed-point decoding and build details.</td><td>Replace test wording; move extraction/build diagnostics into a technical details disclosure.</td></tr><tr><td>Medium</td><td><b>Coverage limits need a short visible explanation</b><br>Help states markers can be possible encounters; counts represent records rather than unique places; underground/interior scenes and other sources are incomplete; compass orientation is not independently verified. These are stated limitations, not accuracy defects independently established by this review.</td><td>Show a concise coverage/source status near results; make possible spawn and missing-data states clear.</td></tr><tr><td>Medium</td><td><b>Share links are unwieldy</b><br>A generated link was 4,653 characters; a fresh browser session restored Coordinate grid.</td><td>Keep reliable restoration, and consider shorter encoded state or a short-link option.</td></tr><tr><td>Low</td><td><b>Small controls and inconsistent wording</b><br>Category up/down controls are compact. Search suggestions and armour counts show a literal question mark separator. Initial pan hint is Zoom in to move the map.</td><td>Enlarge frequent targets, clean up separators, and give concise contextual zoom/pan instructions.</td></tr></table><h2>First improvements to make</h2><ol><li>Make the map dominant on mobile with a filter drawer.</li><li>Reduce initial visual clutter and introduce task presets.</li><li>Clean up duplicate/unmapped quest presentation and internal names.</li><li>Expose the workspace switcher as Map tools.</li><li>Remove test copy and present a concise coverage note.</li></ol><h2>Visual evidence</h2><p>Initial desktop view:</p><img src="01-desktop-initial.png" alt="Initial desktop map with dense markers and sidebar"><p>Fresh mobile default:</p><img style="max-width:390px" src="08-mobile-default.png" alt="Fresh mobile map with sidebar occupying upper screen"><p>Analysis workspace:</p><img src="06-analysis.png" alt="Selected-region analysis charts"><h2>50 interaction records</h2><p>Observations are recorded at different verification depths; control activation alone does not establish end-to-end correctness. Locator failures in search, quest and sharing checks were resolved using the actual visible controls and follow-up evidence. <a href="interactions.json">Full raw interaction log</a>.</p><table><tr><th>#</th><th>Interaction</th><th>Recorded observation</th></tr><tr><td>1</td><td>Initial desktop load</td><td>Map rendered with controls and region labels.</td></tr><tr><td>2</td><td>Zoom in</td><td>Control activated.</td></tr><tr><td>3</td><td>Drag map</td><td>Pointer drag executed; displacement not confirmed.</td></tr><tr><td>4</td><td>Zoom out</td><td>Control activated.</td></tr><tr><td>5</td><td>Whole world</td><td>Control activated.</td></tr><tr><td>6</td><td>Search iron</td><td>Four suggestions including Iron Ore deposits (2,223 locations).</td></tr><tr><td>7</td><td>Find iron deposits on map</td><td>Retried using visible suggestion: Iron Ore deposits selected; Skip to content
+Home
+Icarus
+Enshrouded
+Recipes
+About
+Search for:
+Search Button
+← Back
+Hide
+
+ENSHROUDED ATLAS
+
+WORLD MAP
+Map View Options
+Map Icons
+Search
+Options
+Filter by Region
+MAP ICONS
+Hide
+Hide All
+Reset Order
+MAP ICONS
+Chests (2,813)
+↑
+↓
+Choose Level
+Animals (1,200)
+↑
+↓
+Collectible Sets (95)
+↑
+↓
+Fast travel markers (10)
+↑
+↓
+Food (53,977)
+↑
+↓
+Gatherable objects (368)
+↑
+↓
+Hidden Locations (42)
+↑
+↓
+Lore Pages (1,034)
+↑
+↓
+Materials &amp; Loot (1,272)
+↑
+↓
+Points of interest (626)
+↑
+↓
+Resources (23,201)
+↑
+↓
+Stair Structure (2,210)
+↑
+↓
+Water locations (9)
+↑
+↓
+Matching locations
+Map help</td></tr><tr><td>8</td><td>Fit results</td><td>Control activated</td></tr><tr><td>9</td><td>Search nonexistent item</td><td>Skip to content
+Home
+Icarus
+Enshrouded
+Recipes
+About
+Search for:
+Search Button
+← Back
+Hide
+
+ENSHROUDED ATLAS
+
+WORLD MAP
+Map View Options
+Map Icons
+Search
+Options
+Deselect all
+
+No mapped suggestions found.
+
+Filter by Region
+MAP ICONS
+Hide
+Hide All
+Reset Order
+MAP ICONS
+Chests (2,813)
+↑
+↓
+Choose Level
+Animals (1,200)
+↑
+↓
+Collectible Sets (95)
+↑
+↓
+Fast travel markers (10)
+↑
+↓
+Food (53,977)
+↑
+↓
+Gatherable objects (368)
+↑
+↓
+Hidden Locations (42)
+↑
+↓
+Lore Pages (1,034)
+↑
+↓
+Materials &amp; Loot (1,272)
+↑
+↓
+Points of interest (626)
+↑
+↓
+Resources (23,201)
+↑
+↓
+Stair Structure (2,210)
+↑
+↓
+Water locations (9)
+↑
+↓
+Matching locations
+Map help and coverage
+↕
+
+E</td></tr><tr><td>10</td><td>Clear search</td><td>Control activated</td></tr><tr><td>11</td><td>Open search options</td><td>Skip to content
+Home
+Icarus
+Enshrouded
+Recipes
+About
+Search for:
+Search Button
+← Back
+Hide
+
+ENSHROUDED ATLAS
+
+WORLD MAP
+Map View Options
+Map Icons
+Search
+Options
+Search in
+Map Icons
+Creatures
+Armour
+Weapons &amp; Gems
+Quests
+Search area
+All regions
+Selected regions
+Springlands
+Revelwood
+Blackmire
+Nomad Highlands
+Kindlewastes
+Albaneve Summits
+Veilwater Basin
+Cinder&#39;s Cradle
+Filter by Region
+MAP ICONS
+Hide
+Hide All
+Reset Order
+MAP ICONS
+Chests (2,813)
+↑
+↓
+Choose Level
+Animals (1,200)
+↑
+↓
+Collectible Sets (95)
+↑
+↓
+Fast travel markers (10)
+↑
+↓
+Food (53,977)
+↑
+↓
+Gatherable objects (368)
+↑
+↓
+Hidden Locations (42)
+↑
+↓
+Lore Pages (1,034)
+↑
+↓
+Materials &amp; </td></tr><tr><td>12</td><td>Open region filters</td><td>Skip to content
+Home
+Icarus
+Enshrouded
+Recipes
+About
+Search for:
+Search Button
+← Back
+Hide
+
+ENSHROUDED ATLAS
+
+WORLD MAP
+Map View Options
+Map Icons
+Search
+Options
+Search in
+Map Icons
+Creatures
+Armour
+Weapons &amp; Gems
+Quests
+Search area
+All regions
+Selected regions
+Springlands
+Revelwood
+Blackmire
+Nomad Highlands
+Kindlewastes
+Albaneve Summits
+Veilwater Basin
+Cinder&#39;s Cradle
+Filter by Region
+All regions
+Clear regions
+Springlands
+Revelwood
+Blackmire
+Nomad Highlands
+Kindlewastes
+Albaneve Summits
+Veilwater Basin
+Cinder&#39;s Cradle
+MAP ICONS
+Hide
+Hide All
+Reset Order
+MAP ICONS
+Chests (2,813)
+↑
+↓
+Choose Level
+Animals (1,200)
+↑
+↓
+Collectible Sets (95)
+↑
+↓
+F</td></tr><tr><td>13</td><td>Open map workspace menu</td><td>Skip to content
+Home
+Icarus
+Enshrouded
+Recipes
+About
+Search for:
+Search Button
+← Back
+Hide
+
+ENSHROUDED ATLAS
+
+WORLD MAP
+Map View Options
+Map Icons
+Map Icons
+Creatures
+Analysis
+Armour
+Weapons &amp; Gems
+Weapons &amp; Gems Diary
+Quests
+Notes
+Save Map
+Recipes
+Search
+Options
+Search in
+Map Icons
+Creatures
+Armour
+Weapons &amp; Gems
+Quests
+Search area
+All regions
+Selected regions
+Springlands
+Revelwood
+Blackmire
+Nomad Highlands
+Kindlewastes
+Albaneve Summits
+Veilwater Basin
+Cinder&#39;s Cradle
+Filter by Region
+All regions
+Clear regions
+Springlands
+Revelwood
+Blackmire
+Nomad Highlands
+Kindlewastes
+Albaneve Summits
+Veilwater Basin
+Cinder&#39;s Cradle
+MAP ICONS
+Hide
+Hide All</td></tr><tr><td>14</td><td>Filter Springlands region</td><td>true</td></tr><tr><td>15</td><td>Hide all map icons</td><td>8</td></tr><tr><td>16</td><td>Enable chest markers</td><td>true</td></tr><tr><td>17</td><td>Expand chest level options</td><td>evel
+Range 1
+to
++ Add range
+All levels
+Include unrecorded levels
+
+2544 recorded-level locations · 269 unrecorded. Source level does not guarantee every dropped item’s level.
+
+Animals (1,200)
+↑
+↓
+Collectible Sets (95)
+↑
+↓
+Fast travel markers (10)
+↑
+↓
+Food (53,977)
+↑
+↓
+Gatherable objects (368)
+↑
+↓
+Hidden Locations (42)
+↑
+↓
+Lore Pages (1,034)
+↑
+↓
+Materials &amp; Loot (1,272)
+↑
+↓
+Points of interest (626)
+↑
+↓
+Resources (23,201)
+↑
+↓
+Stair Structure (2,210)
+↑
+↓
+Water locations (9)
+↑
+↓
+Matching locations
+Map help and coverage
+↕
+
+Each grid square is approximately 1 km wide × 1 km high.
+Map size: approximately 10.24 km × 10.24 km (full grid, including surr</td></tr><tr><td>18</td><td>Reorder collectible category</td><td>Reorder button activated</td></tr><tr><td>19</td><td>Reset category order</td><td>Control activated</td></tr><tr><td>20</td><td>Open Creatures workspace</td><td>Creatures workspace opened; Fire attack filter selected and Show creature heat map checked. Filters and heatmap settings available.</td></tr><tr><td>21</td><td>Open Analysis workspace</td><td>Analysis renders overall selected-region spawn counts and damage/weakness charts. Level 25 and One-handed handling selected. Chart data correctness against game not independently validated.</td></tr><tr><td>22</td><td>Open Armour workspace</td><td>Armour catalogue loaded 168 groups / 770 pieces, with level/protection/region filters and mapped-only toggle. Page warns variants may repeat.</td></tr><tr><td>23</td><td>Open Weapons and Gems workspace</td><td>Skip to content
+Home
+Icarus
+Enshrouded
+Recipes
+About
+Search for:
+Search Button
+← Back
+Hide
+
+ENSHROUDED ATLAS
+
+WORLD MAP
+Map View Options
+Weapons &amp; Gems
+Search
+Options
+Filter by Region
+Search in
+Map Icons
+Creatures
+Armour
+Weapons &amp; Gems
+Quests
+Search area
+All regions
+Selected regions
+Springlands
+Revelwood
+Blackmire
+Nomad Highlands
+Kindlewastes
+Albaneve Summits
+Veilwater Basin
+Cinder&#39;s Cradle
+Weapons &amp; Gems
+Weapons
+Weapon Gems (694)
+↑
+↓
+↕
+
+Each grid square is approximately 1 km wide × 1 km high.
+Map size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).
+
+Test creature page: Fell Thunderbrute →
++
+−
+Whole world
+Fit resu</td></tr><tr><td>24</td><td>Open collection diary</td><td>Skip to content
+Home
+Icarus
+Enshrouded
+Recipes
+About
+Search for:
+Search Button
+← Back
+Hide
+
+ENSHROUDED ATLAS
+
+WORLD MAP
+Map View Options
+Weapons &amp; Gems Diary
+Search
+Options
+Search in
+Map Icons
+Creatures
+Armour
+Weapons &amp; Gems
+Quests
+Search area
+All regions
+Selected regions
+Springlands
+Revelwood
+Blackmire
+Nomad Highlands
+Kindlewastes
+Albaneve Summits
+Veilwater Basin
+Cinder&#39;s Cradle
+Weapons &amp; Gems Diary
+Gems
+Weapons
+All items
+All
+Found
+Not found
+Save to computer
+Load from file
+
+Loading diary...
+
+Saved in this browser. Save to computer downloads a JSON backup; Load from file restores it.
+
+↕
+
+Each grid square is approximately 1 km wide × 1 km high</td></tr><tr><td>25</td><td>Filter diary to found items</td><td>m wide × 1 km high.
+Map size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).
+
+Test creature page: Fell Thunderbrute →
++
+−
+Whole world
+Fit results
+Map view
+2D Flat
+Detailed 2D
+3D-style Relief
+Illustrated Terrain
+Coordinate grid
+Map display
+Share view
+© 2026 - gameguides101.com</td></tr><tr><td>26</td><td>Open quests</td><td>Skip to content
+Home
+Icarus
+Enshrouded
+Recipes
+About
+Search for:
+Search Button
+← Back
+Hide
+
+ENSHROUDED ATLAS
+
+WORLD MAP
+Map View Options
+Quests
+Search
+Options
+Search in
+Map Icons
+Creatures
+Armour
+Weapons &amp; Gems
+Quests
+Search area
+All regions
+Selected regions
+Springlands
+Revelwood
+Blackmire
+Nomad Highlands
+Kindlewastes
+Albaneve Summits
+Veilwater Basin
+Cinder&#39;s Cradle
+Quests &amp; Objectives
+
+Loading quests…
+
+↕
+
+Each grid square is approximately 1 km wide × 1 km high.
+Map size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).
+
+Test creature page: Fell Thunderbrute →
++
+−
+Whole world
+Fit results
+Map view
+2D Flat
+Detailed 2D</td></tr><tr><td>27</td><td>Select linked quest card</td><td>Quests &amp; Objectives
+
+186 quests
+
+&quot;Nursery Supplies&quot;
+Steppes
+Location: Not linked in map data
+Enemy Types
+
+No recorded encounter links.
+
+A Beehive Smoker
+Farmer
+Location: &quot;Far Away Fray&quot; Tavern, Vukah Sacrifice Hill — Kindlewastes, Nomad Highlands
+Enemy Types (29)
+A Beehive Smoker
+Farmer
+Location: Not linked in map data
+Enemy Types
+
+No recorded encounter links.
+
+A Black Cauldron For The Alchemist
+Alchemist
+Location: Not linked in map data
+Enemy Types
+
+No recorded encounter links.
+
+A Black Cauldron For The Alchemist
+Alchemist
+Location: Cradle of Dusk, Rattlebleak — Nomad Highlands
+Enemy Types (7)
+A Blast Furnace For The Blacksmith
+Blacksmith
+Lo</td></tr><tr><td>28</td><td>Open Notes</td><td>Skip to content
+Home
+Icarus
+Enshrouded
+Recipes
+About
+Search for:
+Search Button
+← Back
+Hide
+
+ENSHROUDED ATLAS
+
+WORLD MAP
+Map View Options
+Notes
+Search
+Options
+Search in
+Map Icons
+Creatures
+Armour
+Weapons &amp; Gems
+Quests
+Search area
+All regions
+Selected regions
+Springlands
+Revelwood
+Blackmire
+Nomad Highlands
+Kindlewastes
+Albaneve Summits
+Veilwater Basin
+Cinder&#39;s Cradle
+Notes
+
+Save location: Browser Downloads (or your browser save prompt)
+
+Choose save folder
+Clear folder
+Saved notes
+
+No saved notes yet.
+
+New note
+Save note
+Export TXT
+Import TXT
+Delete note
+
+Notes are kept in this browser. Save note also creates a TXT file.
+
+↕
+
+Each grid square is </td></tr><tr><td>29</td><td>Create and save note</td><td>wnloads (or your browser save prompt)
+
+Choose save folder
+Clear folder
+Saved notes
+UX test route
+New note
+Save note
+Export TXT
+Import TXT
+Delete note
+
+TXT download created. Check your browser Downloads.
+
+↕
+
+Each grid square is approximately 1 km wide × 1 km high.
+Map size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).
+
+Test creature page: Fell Thunderbrute →
++
+−
+Whole world
+Fit results
+Map view
+2D Flat
+Detailed 2D
+3D-style Relief
+Illustrated Terrain
+Coordinate grid
+Map display
+Share view
+© 2026 - gameguides101.com</td></tr><tr><td>30</td><td>Open Save Map</td><td>Skip to content
+Home
+Icarus
+Enshrouded
+Recipes
+About
+Search for:
+Search Button
+← Back
+Hide
+
+ENSHROUDED ATLAS
+
+WORLD MAP
+Map View Options
+Save Map
+Search
+Options
+Search in
+Map Icons
+Creatures
+Armour
+Weapons &amp; Gems
+Quests
+Search area
+All regions
+Selected regions
+Springlands
+Revelwood
+Blackmire
+Nomad Highlands
+Kindlewastes
+Albaneve Summits
+Veilwater Basin
+Cinder&#39;s Cradle
+Save Map
+
+Circle marks, pins, quest progress and found locations are saved in this browser. Export a backup to move them to another device.
+
+ Hide found locations
+Save to PC
+Upload save
+
+Save a JSON file with quest progress, found locations, pins and circle marks. Uploading merg</td></tr><tr><td>31</td><td>Export map progress backup</td><td>enshrouded-map-progress-2026-11-04.json</td></tr><tr><td>32</td><td>Restore exported backup</td><td>asin
+Cinder&#39;s Cradle
+Save Map
+
+Save uploaded. Quest progress, found locations, pins and circle marks merged.
+
+ Hide found locations
+Save to PC
+Upload save
+
+Save a JSON file with quest progress, found locations, pins and circle marks. Uploading merges the file with your current progress.
+
+↕
+
+Each grid square is approximately 1 km wide × 1 km high.
+Map size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).
+
+Test creature page: Fell Thunderbrute →
++
+−
+Whole world
+Fit results
+Map view
+2D Flat
+Detailed 2D
+3D-style Relief
+Illustrated Terrain
+Coordinate grid
+Map display
+Share view
+© 2026 - gameguides101.com</td></tr><tr><td>33</td><td>Switch terrain to Detailed 2D</td><td>detailed</td></tr><tr><td>34</td><td>Switch terrain to 3D-style Relief</td><td>terrain</td></tr><tr><td>35</td><td>Switch terrain to Illustrated Terrain</td><td>illustrated</td></tr><tr><td>36</td><td>Switch terrain to Coordinate grid</td><td>grid</td></tr><tr><td>37</td><td>Open display settings</td><td>Skip to content
+Home
+Icarus
+Enshrouded
+Recipes
+About
+Search for:
+Search Button
+← Back
+Hide
+
+ENSHROUDED ATLAS
+
+WORLD MAP
+Map View Options
+Save Map
+Search
+Options
+Search in
+Map Icons
+Creatures
+Armour
+Weapons &amp; Gems
+Quests
+Search area
+All regions
+Selected regions
+Springlands
+Revelwood
+Blackmire
+Nomad Highlands
+Kindlewastes
+Albaneve Summits
+Veilwater Basin
+Cinder&#39;s Cradle
+Save Map
+
+Save uploaded. Quest progress, found locations, pins and circle marks merged.
+
+ Hide found locations
+Save to PC
+Upload save
+
+Save a JSON file with quest progress, found locations, pins and circle marks. Uploading merges the file with your current progress.
+
+↕
+
+Each gri</td></tr><tr><td>38</td><td>Open icon and zoom settings</td><td>Icons &amp; zoom is expanded by default when Map display opens; clicking its heading collapses it. Reopened for subsequent size/congestion tests.</td></tr><tr><td>39</td><td>Increase map icon size</td><td>1.5</td></tr><tr><td>40</td><td>Reduce crowded icon overlap</td><td>0.25</td></tr><tr><td>41</td><td>Share current view</td><td>https://gameguides101.com/enshrouded-map/#em=%7B%22v%22%3A1%2C%22lootLevels%22%3A%7B%22active%22%3Afalse%2C%22ranges%22%3A%5B%7B%22min%22%3A1%2C%22max%22%3A55%7D%5D%2C%22unknown%22%3Atrue%7D%2C%22regionView%22%3A%22personal%22%2C%22regionFilters%22%3A%7B%22enemies%22%3A%5B%22Grassland%22%2C%22Deepforest%22%2C%22TallTrees%22%2C%22Steppes%22%2C%22Desert%22%2C%22ColdHeights%22%2C%22Wetland%22%2C%22AncientLand%22%5D%2C%22armour%22%3A%22all%22%2C%22weapons%22%3A%22all%22%2C%22weaponRegions%22%3A%5B%22Grassland%22%2C%22Deepforest%22%2C%22TallTrees%22%2C%22Steppes%22%2C%22Desert%22%2C%22ColdHeights%22%2C%22Wetland%22%2C%22AncientLand%22%5D%7D%2C%22c</td></tr><tr><td>42</td><td>Reset display preferences</td><td>grid</td></tr><tr><td>43</td><td>Hide desktop sidebar</td><td>Skip to content
+Home
+Icarus
+Enshrouded
+Recipes
+About
+Search for:
+Search Button
+← Back
+Show
+↕
+
+Each grid square is approximately 1 km wide × 1 km high.
+Map size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).
+
+Test creature page: Fell Thunderbrute →
++
+−
+Whole world
+Fit results
+Map view
+2D Flat
+Detailed 2D
+3D-style Relief
+Illustrated Terrain
+Coordinate grid
+Map display
+Icons &amp; zoom
+Icon size
+-50%
+-25%
+-20%
+Normal
++25%
++50%
++75%
++100%
+Hide icon totals
+Reveal more icons as you zoom in
+Icons by Zoom Per Territory
+Reduce icon congestion
+Off
+5% fewer
+10% fewer
+15% fewer
+20% fewer
+25% fewer
+30% fewer
+35% fewer
+40% fewer
+4</td></tr><tr><td>44</td><td>Show desktop sidebar again</td><td>Control activated</td></tr><tr><td>45</td><td>Use map at mobile size 390 × 844</td><td>{&quot;viewport&quot;:390,&quot;documentWidth&quot;:390,&quot;observation&quot;:&quot;Tested existing state and a fresh touch-enabled mobile context. Sidebar above map; controls cover upper terrain; no horizontal page overflow.&quot;}</td></tr><tr><td>46</td><td>Hide sidebar on mobile to use map</td><td>Sidebar collapsed with Show control available; map controls occupy top of canvas.</td></tr><tr><td>47</td><td>Add custom map pin</td><td>Right-click opens Add pin here, name and House icon selected, Save pin closes editor.</td></tr><tr><td>48</td><td>Reload to verify saved note and pin</td><td>After reload, UX test route note remains; a new progress export contains UX test base pin with House icon and coordinates.</td></tr><tr><td>49</td><td>Keyboard navigation through map controls</td><td>{&quot;tag&quot;:&quot;BUTTON&quot;,&quot;label&quot;:&quot;Zoom out&quot;,&quot;text&quot;:&quot;−&quot;}</td></tr><tr><td>50</td><td>Open shared view in fresh browser context</td><td>{&quot;urlLength&quot;:4653,&quot;restoredLayer&quot;:&quot;grid&quot;}</td></tr></table></html>

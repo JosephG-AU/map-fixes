@@ -1,0 +1,263 @@
+[
+  {
+    "n": 1,
+    "action": "Initial desktop load",
+    "result": "Map rendered with controls and region labels."
+  },
+  {
+    "n": 2,
+    "action": "Zoom in",
+    "result": "Control activated."
+  },
+  {
+    "n": 3,
+    "action": "Drag map",
+    "result": "Pointer drag executed; displacement not confirmed."
+  },
+  {
+    "n": 4,
+    "action": "Zoom out",
+    "result": "Control activated."
+  },
+  {
+    "n": 5,
+    "action": "Whole world",
+    "result": "Control activated."
+  },
+  {
+    "n": 6,
+    "action": "Search iron",
+    "result": "Four suggestions including Iron Ore deposits (2,223 locations)."
+  },
+  {
+    "n": 7,
+    "action": "Find iron deposits on map",
+    "result": "Retried using visible suggestion: Iron Ore deposits selected; Skip to content\nHome\nIcarus\nEnshrouded\nRecipes\nAbout\nSearch for:\nSearch Button\n← Back\nHide\n\nENSHROUDED ATLAS\n\nWORLD MAP\nMap View Options\nMap Icons\nSearch\nOptions\nFilter by Region\nMAP ICONS\nHide\nHide All\nReset Order\nMAP ICONS\nChests (2,813)\n↑\n↓\nChoose Level\nAnimals (1,200)\n↑\n↓\nCollectible Sets (95)\n↑\n↓\nFast travel markers (10)\n↑\n↓\nFood (53,977)\n↑\n↓\nGatherable objects (368)\n↑\n↓\nHidden Locations (42)\n↑\n↓\nLore Pages (1,034)\n↑\n↓\nMaterials & Loot (1,272)\n↑\n↓\nPoints of interest (626)\n↑\n↓\nResources (23,201)\n↑\n↓\nStair Structure (2,210)\n↑\n↓\nWater locations (9)\n↑\n↓\nMatching locations\nMap help and coverage\n↕\n\nEach grid square is approximately 1 km wide × 1 km high.\nMap size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).\n\nTest creature page: Fell Thunderbrute →\n+\n−\nWhole world\nFit results\nMap view\n2D Flat\nDetailed 2D\n3D-style Relief\nIllustrated Terrain\nCoordinate grid\nMap display\nShare view\nZoom in to move the map\n© 2026 - gameguides101.com"
+  },
+  {
+    "n": 8,
+    "action": "Fit results",
+    "result": "Control activated"
+  },
+  {
+    "n": 9,
+    "action": "Search nonexistent item",
+    "result": "Skip to content\nHome\nIcarus\nEnshrouded\nRecipes\nAbout\nSearch for:\nSearch Button\n← Back\nHide\n\nENSHROUDED ATLAS\n\nWORLD MAP\nMap View Options\nMap Icons\nSearch\nOptions\nDeselect all\n\nNo mapped suggestions found.\n\nFilter by Region\nMAP ICONS\nHide\nHide All\nReset Order\nMAP ICONS\nChests (2,813)\n↑\n↓\nChoose Level\nAnimals (1,200)\n↑\n↓\nCollectible Sets (95)\n↑\n↓\nFast travel markers (10)\n↑\n↓\nFood (53,977)\n↑\n↓\nGatherable objects (368)\n↑\n↓\nHidden Locations (42)\n↑\n↓\nLore Pages (1,034)\n↑\n↓\nMaterials & Loot (1,272)\n↑\n↓\nPoints of interest (626)\n↑\n↓\nResources (23,201)\n↑\n↓\nStair Structure (2,210)\n↑\n↓\nWater locations (9)\n↑\n↓\nMatching locations\nMap help and coverage\n↕\n\nEach grid square is approximately 1 km wide × 1 km "
+  },
+  {
+    "n": 10,
+    "action": "Clear search",
+    "result": "Control activated"
+  },
+  {
+    "n": 11,
+    "action": "Open search options",
+    "result": "Skip to content\nHome\nIcarus\nEnshrouded\nRecipes\nAbout\nSearch for:\nSearch Button\n← Back\nHide\n\nENSHROUDED ATLAS\n\nWORLD MAP\nMap View Options\nMap Icons\nSearch\nOptions\nSearch in\nMap Icons\nCreatures\nArmour\nWeapons & Gems\nQuests\nSearch area\nAll regions\nSelected regions\nSpringlands\nRevelwood\nBlackmire\nNomad Highlands\nKindlewastes\nAlbaneve Summits\nVeilwater Basin\nCinder's Cradle\nFilter by Region\nMAP ICONS\nHide\nHide All\nReset Order\nMAP ICONS\nChests (2,813)\n↑\n↓\nChoose Level\nAnimals (1,200)\n↑\n↓\nCollectible Sets (95)\n↑\n↓\nFast travel markers (10)\n↑\n↓\nFood (53,977)\n↑\n↓\nGatherable objects (368)\n↑\n↓\nHidden Locations (42)\n↑\n↓\nLore Pages (1,034)\n↑\n↓\nMaterials & Loot (1,272)\n↑\n↓\nPoints of interest (626)\n↑\n↓\nResources (23,201)\n↑\n↓\nStair Structure (2,210)\n↑\n↓\nWater locations (9)\n↑\n↓\nMatching locations\nMap help and coverage\n↕\n\nEach grid square is approximately 1 km wide × 1 km high.\nMap size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).\n\nTest creature page: Fell Thunderbrute →\n+\n−\nWhole world\nFit results\nMap view\n2D Flat\nDetailed 2D\n3D-style Relief\nIllustrated Terrain\nCoordinate grid\nMap display\nShare view\n© 2026 - gameguides101.com"
+  },
+  {
+    "n": 12,
+    "action": "Open region filters",
+    "result": "Skip to content\nHome\nIcarus\nEnshrouded\nRecipes\nAbout\nSearch for:\nSearch Button\n← Back\nHide\n\nENSHROUDED ATLAS\n\nWORLD MAP\nMap View Options\nMap Icons\nSearch\nOptions\nSearch in\nMap Icons\nCreatures\nArmour\nWeapons & Gems\nQuests\nSearch area\nAll regions\nSelected regions\nSpringlands\nRevelwood\nBlackmire\nNomad Highlands\nKindlewastes\nAlbaneve Summits\nVeilwater Basin\nCinder's Cradle\nFilter by Region\nAll regions\nClear regions\nSpringlands\nRevelwood\nBlackmire\nNomad Highlands\nKindlewastes\nAlbaneve Summits\nVeilwater Basin\nCinder's Cradle\nMAP ICONS\nHide\nHide All\nReset Order\nMAP ICONS\nChests (2,813)\n↑\n↓\nChoose Level\nAnimals (1,200)\n↑\n↓\nCollectible Sets (95)\n↑\n↓\nFast travel markers (10)\n↑\n↓\nFood (53,977)\n↑\n↓\nGatherable objects (368)\n↑\n↓\nHidden Locations (42)\n↑\n↓\nLore Pages (1,034)\n↑\n↓\nMaterials & Loot (1,272)\n↑\n↓\nPoints of interest (626)\n↑\n↓\nResources (23,201)\n↑\n↓\nStair Structure (2,210)\n↑\n↓\nWater locations (9)\n↑\n↓\nMatching locations\nMap help and coverage\n↕\n\nEach grid square is approximately 1 km wide × 1 km high.\nMap size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).\n\nTest creature page: Fell Thunderbrute →\n+\n−\nWhole world\nFit results\nMap view\n2D Flat\nDetailed 2D\n3D-style Relief\nIllustrated Terrain\nCoordinate grid\nMap display\nShare view\n© 2026 - gameguides101.com"
+  },
+  {
+    "n": 13,
+    "action": "Open map workspace menu",
+    "result": "Skip to content\nHome\nIcarus\nEnshrouded\nRecipes\nAbout\nSearch for:\nSearch Button\n← Back\nHide\n\nENSHROUDED ATLAS\n\nWORLD MAP\nMap View Options\nMap Icons\nMap Icons\nCreatures\nAnalysis\nArmour\nWeapons & Gems\nWeapons & Gems Diary\nQuests\nNotes\nSave Map\nRecipes\nSearch\nOptions\nSearch in\nMap Icons\nCreatures\nArmour\nWeapons & Gems\nQuests\nSearch area\nAll regions\nSelected regions\nSpringlands\nRevelwood\nBlackmire\nNomad Highlands\nKindlewastes\nAlbaneve Summits\nVeilwater Basin\nCinder's Cradle\nFilter by Region\nAll regions\nClear regions\nSpringlands\nRevelwood\nBlackmire\nNomad Highlands\nKindlewastes\nAlbaneve Summits\nVeilwater Basin\nCinder's Cradle\nMAP ICONS\nHide\nHide All\nReset Order\nMAP ICONS\nChests (2,813)\n↑\n↓\nChoose Level\nAnimals (1,200)\n↑\n↓\nCollectible Sets (95)\n↑\n↓\nFast travel markers (10)\n↑\n↓\nFood (53,977)\n↑\n↓\nGatherable objects (368)\n↑\n↓\nHidden Locations (42)\n↑\n↓\nLore Pages (1,034)\n↑\n↓\nMaterials & Loot (1,272)"
+  },
+  {
+    "n": 14,
+    "action": "Filter Springlands region",
+    "result": true
+  },
+  {
+    "n": 15,
+    "action": "Hide all map icons",
+    "result": 8
+  },
+  {
+    "n": 16,
+    "action": "Enable chest markers",
+    "result": true
+  },
+  {
+    "n": 17,
+    "action": "Expand chest level options",
+    "result": "evel\nRange 1\nto\n+ Add range\nAll levels\nInclude unrecorded levels\n\n2544 recorded-level locations · 269 unrecorded. Source level does not guarantee every dropped item’s level.\n\nAnimals (1,200)\n↑\n↓\nCollectible Sets (95)\n↑\n↓\nFast travel markers (10)\n↑\n↓\nFood (53,977)\n↑\n↓\nGatherable objects (368)\n↑\n↓\nHidden Locations (42)\n↑\n↓\nLore Pages (1,034)\n↑\n↓\nMaterials & Loot (1,272)\n↑\n↓\nPoints of interest (626)\n↑\n↓\nResources (23,201)\n↑\n↓\nStair Structure (2,210)\n↑\n↓\nWater locations (9)\n↑\n↓\nMatching locations\nMap help and coverage\n↕\n\nEach grid square is approximately 1 km wide × 1 km high.\nMap size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).\n\nTest creature page: Fell Thunderbrute →\n+\n−\nWhole world\nFit results\nMap view\n2D Flat\nDetailed 2D\n3D-style Relief\nIllustrated Terrain\nCoordinate grid\nMap display\nShare view\nAll map icons hidden. Saved pins have not been deleted.\n© 2026 - gameguides101.com"
+  },
+  {
+    "n": 18,
+    "action": "Reorder collectible category",
+    "result": "Reorder button activated"
+  },
+  {
+    "n": 19,
+    "action": "Reset category order",
+    "result": "Control activated"
+  },
+  {
+    "n": 20,
+    "action": "Open Creatures workspace",
+    "result": "Creatures workspace opened; Fire attack filter selected and Show creature heat map checked. Filters and heatmap settings available."
+  },
+  {
+    "n": 21,
+    "action": "Open Analysis workspace",
+    "result": "Analysis renders overall selected-region spawn counts and damage/weakness charts. Level 25 and One-handed handling selected. Chart data correctness against game not independently validated."
+  },
+  {
+    "n": 22,
+    "action": "Open Armour workspace",
+    "result": "Armour catalogue loaded 168 groups / 770 pieces, with level/protection/region filters and mapped-only toggle. Page warns variants may repeat."
+  },
+  {
+    "n": 23,
+    "action": "Open Weapons and Gems workspace",
+    "result": "Skip to content\nHome\nIcarus\nEnshrouded\nRecipes\nAbout\nSearch for:\nSearch Button\n← Back\nHide\n\nENSHROUDED ATLAS\n\nWORLD MAP\nMap View Options\nWeapons & Gems\nSearch\nOptions\nFilter by Region\nSearch in\nMap Icons\nCreatures\nArmour\nWeapons & Gems\nQuests\nSearch area\nAll regions\nSelected regions\nSpringlands\nRevelwood\nBlackmire\nNomad Highlands\nKindlewastes\nAlbaneve Summits\nVeilwater Basin\nCinder's Cradle\nWeapons & Gems\nWeapons\nWeapon Gems (694)\n↑\n↓\n↕\n\nEach grid square is approximately 1 km wide × 1 km high.\nMap size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).\n\nTest creature page: Fell Thunderbrute →\n+\n−\nWhole world\nFit results\nMap view\n2D Flat\nDetailed 2D\n3D-style Relief\nIllustrated Terrain\nCoordinate grid\nMap display\nShare view\n© 2026 - gameguides101.com"
+  },
+  {
+    "n": 24,
+    "action": "Open collection diary",
+    "result": "Skip to content\nHome\nIcarus\nEnshrouded\nRecipes\nAbout\nSearch for:\nSearch Button\n← Back\nHide\n\nENSHROUDED ATLAS\n\nWORLD MAP\nMap View Options\nWeapons & Gems Diary\nSearch\nOptions\nSearch in\nMap Icons\nCreatures\nArmour\nWeapons & Gems\nQuests\nSearch area\nAll regions\nSelected regions\nSpringlands\nRevelwood\nBlackmire\nNomad Highlands\nKindlewastes\nAlbaneve Summits\nVeilwater Basin\nCinder's Cradle\nWeapons & Gems Diary\nGems\nWeapons\nAll items\nAll\nFound\nNot found\nSave to computer\nLoad from file\n\nLoading diary...\n\nSaved in this browser. Save to computer downloads a JSON backup; Load from file restores it.\n\n↕\n\nEach grid square is approximately 1 km wide × 1 km high.\nMap size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).\n\nTest creature page: Fell Thunderbrute →\n+\n−\nWhole world\nFit results\nMap view\n2D Flat\nDetailed 2D\n3D-style Relief\nIllustrated Terrain\nCoordinate grid\nMap display\nShare view\n© 2026 - gameguides101.com"
+  },
+  {
+    "n": 25,
+    "action": "Filter diary to found items",
+    "result": "m wide × 1 km high.\nMap size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).\n\nTest creature page: Fell Thunderbrute →\n+\n−\nWhole world\nFit results\nMap view\n2D Flat\nDetailed 2D\n3D-style Relief\nIllustrated Terrain\nCoordinate grid\nMap display\nShare view\n© 2026 - gameguides101.com"
+  },
+  {
+    "n": 26,
+    "action": "Open quests",
+    "result": "Skip to content\nHome\nIcarus\nEnshrouded\nRecipes\nAbout\nSearch for:\nSearch Button\n← Back\nHide\n\nENSHROUDED ATLAS\n\nWORLD MAP\nMap View Options\nQuests\nSearch\nOptions\nSearch in\nMap Icons\nCreatures\nArmour\nWeapons & Gems\nQuests\nSearch area\nAll regions\nSelected regions\nSpringlands\nRevelwood\nBlackmire\nNomad Highlands\nKindlewastes\nAlbaneve Summits\nVeilwater Basin\nCinder's Cradle\nQuests & Objectives\n\nLoading quests…\n\n↕\n\nEach grid square is approximately 1 km wide × 1 km high.\nMap size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).\n\nTest creature page: Fell Thunderbrute →\n+\n−\nWhole world\nFit results\nMap view\n2D Flat\nDetailed 2D\n3D-style Relief\nIllustrated Terrain\nCoordinate grid\nMap display\nShare view\n© 2026 - gameguides101.com"
+  },
+  {
+    "n": 27,
+    "action": "Select linked quest card",
+    "result": "Quests & Objectives\n\n186 quests\n\n\"Nursery Supplies\"\nSteppes\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nA Beehive Smoker\nFarmer\nLocation: \"Far Away Fray\" Tavern, Vukah Sacrifice Hill — Kindlewastes, Nomad Highlands\nEnemy Types (29)\nA Beehive Smoker\nFarmer\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nA Black Cauldron For The Alchemist\nAlchemist\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nA Black Cauldron For The Alchemist\nAlchemist\nLocation: Cradle of Dusk, Rattlebleak — Nomad Highlands\nEnemy Types (7)\nA Blast Furnace For The Blacksmith\nBlacksmith\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nA Blast Furnace For The Blacksmith\nBlacksmith\nLocation: Forge of Obsidia — Albaneve Summits\nEnemy Types (15)\nA Crucial Investigation\nDeepforest\nLocation: Glennwood's End — Revelwood\nEnemy Types (26)\nA Cure For Hemotoxin\nAlchemist\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nA Cure For The Fell Curse\nAlchemist\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nA Cursed Catch\nSteppes\nLocation: Pondsworth — Nomad Highlands\nEnemy Types (4)\nA Destroyed Roof\nGrassland\nLocation: Woodgard — Springlands\nEnemy Types (23)\nA Fellow Shepherd\nCryptKeeper\nLocation: Drak'Dal Temple — Veilwater Basin\nEnemy Types (23)\nA Gem Forge Of Our Own\nAncientResearcher\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nA Glimpse Of Eternity\nAlchemist\nLocation: Veilwater Basin\nEnemy Types (24)\nA Graceful Flight\nCarpenter\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nA Lantern For Mei\nChineseNewYearTrader\nLocation: Morwenna — Springlands\nEnemy Types (19)\nA Lighthouse In Sunless Seas\nFlame\nLocation: Veilwater Basin — Veilwater Basin\nEnemy Types (4)\nA Rising Tide\nDeepforest\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nA Spinning Machine For The Hunter\nHuntress\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nA Story Of Fire\nFlame\nLocation: Ancient Obelisk — Springlands\nEnemy Types (5)\nA Story Of Rot\nFlame\nLocation: Ancient Obelisk — Springlands\nEnemy Types (29)\nA Test Of Skill\nHuntress\nLocation: Revelwood\nEnemy Types (6)\nA Time For Harvest\nFarmer\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nA Tool For Underwater Mining\nBlacksmith\nLocation: Orville, Shipwrecks — Veilwater Basin\nEnemy Types (19)\nActivating The Gate To The Stars\nAncientResearcher\nLocation: Embervale Museum — Cinder's Cradle, Springlands\nEnemy Types (13)\nAlchemic Wisdom\nAlchemist\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nAlchemic Wisdom\nAlchemist\nLocation: Camellia Lake Marble Quarry, Wickmouth — Albaneve Summits\nEnemy Types (28)\nAlchemist Needs Shelter\nAlchemist\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nAlmanac of Plants and Seedlings For The Farmer\nFarmer\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nAlmanac of Plants and Seedlings For The Farmer\nFarmer\nLocation: Southern Caravan Camp — Nomad Highlands\nEnemy Types (6)\nAmong The Bluejays\nAlchemist\nLocation: Scatterbone — Kindlewastes\nEnemy Types (25)\nAn Eternal Spell\nAlchemist\nLocation: Springlands\nEnemy Types (22)\nAnimal Farming\nFarmer\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nBarber Needs Shelter\nBarber\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nBard Needs Shelter\nBard\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nBeds And Shelter\nNone\nLocation: Not linked in map data\nEnemy Types\n\nNo recorded encounter links.\n\nBorn Swimmer\nFisher\nLocation: Goldrock S"
+  },
+  {
+    "n": 28,
+    "action": "Open Notes",
+    "result": "Skip to content\nHome\nIcarus\nEnshrouded\nRecipes\nAbout\nSearch for:\nSearch Button\n← Back\nHide\n\nENSHROUDED ATLAS\n\nWORLD MAP\nMap View Options\nNotes\nSearch\nOptions\nSearch in\nMap Icons\nCreatures\nArmour\nWeapons & Gems\nQuests\nSearch area\nAll regions\nSelected regions\nSpringlands\nRevelwood\nBlackmire\nNomad Highlands\nKindlewastes\nAlbaneve Summits\nVeilwater Basin\nCinder's Cradle\nNotes\n\nSave location: Browser Downloads (or your browser save prompt)\n\nChoose save folder\nClear folder\nSaved notes\n\nNo saved notes yet.\n\nNew note\nSave note\nExport TXT\nImport TXT\nDelete note\n\nNotes are kept in this browser. Save note also creates a TXT file.\n\n↕\n\nEach grid square is approximately 1 km wide × 1 km high.\nMap size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).\n\nTest creature page: Fell Thunderbrute →\n+\n−\nWhole world\nFit results\nMap view\n2D Flat\nDetailed 2D\n3D-style Relief\nIllustrated Terrain\nCoordinate grid\nMap display\nShare view\n© 2026 - gameguides101.com"
+  },
+  {
+    "n": 29,
+    "action": "Create and save note",
+    "result": "wnloads (or your browser save prompt)\n\nChoose save folder\nClear folder\nSaved notes\nUX test route\nNew note\nSave note\nExport TXT\nImport TXT\nDelete note\n\nTXT download created. Check your browser Downloads.\n\n↕\n\nEach grid square is approximately 1 km wide × 1 km high.\nMap size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).\n\nTest creature page: Fell Thunderbrute →\n+\n−\nWhole world\nFit results\nMap view\n2D Flat\nDetailed 2D\n3D-style Relief\nIllustrated Terrain\nCoordinate grid\nMap display\nShare view\n© 2026 - gameguides101.com"
+  },
+  {
+    "n": 30,
+    "action": "Open Save Map",
+    "result": "Skip to content\nHome\nIcarus\nEnshrouded\nRecipes\nAbout\nSearch for:\nSearch Button\n← Back\nHide\n\nENSHROUDED ATLAS\n\nWORLD MAP\nMap View Options\nSave Map\nSearch\nOptions\nSearch in\nMap Icons\nCreatures\nArmour\nWeapons & Gems\nQuests\nSearch area\nAll regions\nSelected regions\nSpringlands\nRevelwood\nBlackmire\nNomad Highlands\nKindlewastes\nAlbaneve Summits\nVeilwater Basin\nCinder's Cradle\nSave Map\n\nCircle marks, pins, quest progress and found locations are saved in this browser. Export a backup to move them to another device.\n\n Hide found locations\nSave to PC\nUpload save\n\nSave a JSON file with quest progress, found locations, pins and circle marks. Uploading merges the file with your current progress.\n\n↕\n\nEach grid square is approximately 1 km wide × 1 km high.\nMap size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).\n\nTest creature page: Fell Thunderbrute →\n+\n−\nWhole world\nFit results\nMap view\n2D Flat\nDetailed 2D\n3D-style Relief\nIllustrated Terrain\nCoordinate grid\nMap display\nShare view\n© 2026 - gameguides101.com"
+  },
+  {
+    "n": 31,
+    "action": "Export map progress backup",
+    "result": "enshrouded-map-progress-2026-11-04.json"
+  },
+  {
+    "n": 32,
+    "action": "Restore exported backup",
+    "result": "asin\nCinder's Cradle\nSave Map\n\nSave uploaded. Quest progress, found locations, pins and circle marks merged.\n\n Hide found locations\nSave to PC\nUpload save\n\nSave a JSON file with quest progress, found locations, pins and circle marks. Uploading merges the file with your current progress.\n\n↕\n\nEach grid square is approximately 1 km wide × 1 km high.\nMap size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).\n\nTest creature page: Fell Thunderbrute →\n+\n−\nWhole world\nFit results\nMap view\n2D Flat\nDetailed 2D\n3D-style Relief\nIllustrated Terrain\nCoordinate grid\nMap display\nShare view\n© 2026 - gameguides101.com"
+  },
+  {
+    "n": 33,
+    "action": "Switch terrain to Detailed 2D",
+    "result": "detailed"
+  },
+  {
+    "n": 34,
+    "action": "Switch terrain to 3D-style Relief",
+    "result": "terrain"
+  },
+  {
+    "n": 35,
+    "action": "Switch terrain to Illustrated Terrain",
+    "result": "illustrated"
+  },
+  {
+    "n": 36,
+    "action": "Switch terrain to Coordinate grid",
+    "result": "grid"
+  },
+  {
+    "n": 37,
+    "action": "Open display settings",
+    "result": "Skip to content\nHome\nIcarus\nEnshrouded\nRecipes\nAbout\nSearch for:\nSearch Button\n← Back\nHide\n\nENSHROUDED ATLAS\n\nWORLD MAP\nMap View Options\nSave Map\nSearch\nOptions\nSearch in\nMap Icons\nCreatures\nArmour\nWeapons & Gems\nQuests\nSearch area\nAll regions\nSelected regions\nSpringlands\nRevelwood\nBlackmire\nNomad Highlands\nKindlewastes\nAlbaneve Summits\nVeilwater Basin\nCinder's Cradle\nSave Map\n\nSave uploaded. Quest progress, found locations, pins and circle marks merged.\n\n Hide found locations\nSave to PC\nUpload save\n\nSave a JSON file with quest progress, found locations, pins and circle marks. Uploading merges the file with your current progress.\n\n↕\n\nEach grid square is approximately 1 km wide × 1 km high.\nMap size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).\n\nTest creature page: Fell Thunderbrute →\n+\n−\nWhole world\nFit results\nMap view\n2D Flat\nDetailed 2D\n3D-style Relief\nIllustrated Terrain\nCoordinate grid\nMap display\nIcons & zoom\nIcon size\n-50%\n-25%\n-20%\nNormal\n+25%\n+50%\n+75%\n+100%\nHide icon totals\nReveal more icons as you zoom in\nIcons by Zoom Per Territory\nReduce icon congestion\nOff\n5% fewer\n10% fewer\n15% fewer\n20% fewer\n25% fewer\n30% fewer\n35% fewer\n40% fewer\n45% fewer\n50% fewer\n\nReduces overlap in crowded areas. Zoom in to reveal more.\n\nMap names\nTerrain & boundaries\nSearch\nEnemy card colours\nReset display\nShare view\n© 2026 - gameguides101.com"
+  },
+  {
+    "n": 38,
+    "action": "Open icon and zoom settings",
+    "result": "Icons & zoom is expanded by default when Map display opens; clicking its heading collapses it. Reopened for subsequent size/congestion tests."
+  },
+  {
+    "n": 39,
+    "action": "Increase map icon size",
+    "result": "1.5"
+  },
+  {
+    "n": 40,
+    "action": "Reduce crowded icon overlap",
+    "result": "0.25"
+  },
+  {
+    "n": 41,
+    "action": "Share current view",
+    "result": "https://gameguides101.com/enshrouded-map/#em=%7B%22v%22%3A1%2C%22lootLevels%22%3A%7B%22active%22%3Afalse%2C%22ranges%22%3A%5B%7B%22min%22%3A1%2C%22max%22%3A55%7D%5D%2C%22unknown%22%3Atrue%7D%2C%22regionView%22%3A%22personal%22%2C%22regionFilters%22%3A%7B%22enemies%22%3A%5B%22Grassland%22%2C%22Deepforest%22%2C%22TallTrees%22%2C%22Steppes%22%2C%22Desert%22%2C%22ColdHeights%22%2C%22Wetland%22%2C%22AncientLand%22%5D%2C%22armour%22%3A%22all%22%2C%22weapons%22%3A%22all%22%2C%22weaponRegions%22%3A%5B%22Grassland%22%2C%22Deepforest%22%2C%22TallTrees%22%2C%22Steppes%22%2C%22Desert%22%2C%22ColdHeights%22%2C%22Wetland%22%2C%22AncientLand%22%5D%7D%2C%22c%22%3A%5B5402.134999999999%2C5075.155%2C1.111066658426488%5D%2C%22groups%22%3A%5B%5D%2C%22regions%22%3A%5B%22Grassland%22%2C%22Deepforest%22%2C%22TallTrees%22%2C%22Steppes%22%2C%22Desert%22%2C%22ColdHeights%22%2C%22Wetland%22%2C%22AncientLand%22%5D%2C%22q%22%3A%22%22%2C%22damage%22%3A%22all%22%2C%22weakTo%22%3A%22all%22%2C%22hotspots%22%3Atrue%2C%22creaturePoi%22%3Afalse%2C%22creaturePoiGroups%22%3A%5B%5D%2C%22heatRegions%22%3A%5B%22Grassland%22%2C%22Deepforest%22%2C%22TallTrees%22%2C%22Steppes%22%2C%22Desert%22%2C%22ColdHeights%22%2C%22Wetland%22%2C%22AncientLand%22%5D%2C%22source%22%3A%22all%22%2C%22layer%22%3A%22grid%22%2C%22roads%22%3A%7B%22enabled%22%3Atrue%2C%22width%22%3A1%2C%22opacity%22%3A70%2C%22color%22%3A%22%23e9bd65%22%7D%2C%22mouseCoordinates%22%3Atrue%2C%22hideIconTotals%22%3Atrue%2C%22zoomIcons%22%3Atrue%2C%22zoomIconAmount%22%3A20%2C%22territoryIcons%22%3A%7B%22Grassland%22%3A60%2C%22Deepforest%22%3A60%2C%22TallTrees%22%3A60%2C%22Steppes%22%3A60%2C%22Desert%22%3A60%2C%22ColdHeights%22%3A60%2C%22Wetland%22%3A60%2C%22AncientLand%22%3A60%7D%2C%22detailed%22%3A%7B%22regions%22%3A1%2C%22strength%22%3A35%2C%22contours%22%3A1%2C%22opacity%22%3A90%2C%22size%22%3A12%2C%22labels%22%3A1%2C%22structures%22%3A1%2C%22bridges%22%3A1%2C%22trees%22%3A1%2C%22roads%22%3A1%2C%22poi%22%3A1%2C%22contourOpacity%22%3A65%2C%22contourThickness%22%3A1%2C%22view%22%3A%22flat%22%2C%22colours%22%3A%7B%22Grassland%22%3A%22%23a7cf70%22%2C%22Deepforest%22%3A%22%2365aa80%22%2C%22Steppes%22%3A%22%23dbbe79%22%2C%22Desert%22%3A%22%23e49965%22%2C%22ColdHeights%22%3A%22%23c9e9f5%22%2C%22Wetland%22%3A%22%23b38bd0%22%2C%22TallTrees%22%3A%22%2369c4ba%22%2C%22AncientLand%22%3A%22%23c5a564%22%7D%7D%2C%22grid%22%3Atrue%2C%22water%22%3Atrue%2C%22contours%22%3Atrue%2C%22contourOpacity%22%3A50%2C%22contourThickness%22%3A1%2C%22regionNames%22%3Atrue%2C%22placeNames%22%3Atrue%2C%22poiNames%22%3Afalse%2C%22fastTravelNames%22%3Afalse%2C%22spireNames%22%3Afalse%2C%22terrainOutlines%22%3Atrue%2C%22boundaryOpacity%22%3A40%2C%22borders%22%3Afalse%2C%22exactBorders%22%3Afalse%2C%22boundaryAreas%22%3Anull%2C%22shroudVisible%22%3Afalse%2C%22fog%22%3A%5Btrue%2Cfalse%5D%2C%22tolerance%22%3A%221%22%7D"
+  },
+  {
+    "n": 42,
+    "action": "Reset display preferences",
+    "result": "grid"
+  },
+  {
+    "n": 43,
+    "action": "Hide desktop sidebar",
+    "result": "Skip to content\nHome\nIcarus\nEnshrouded\nRecipes\nAbout\nSearch for:\nSearch Button\n← Back\nShow\n↕\n\nEach grid square is approximately 1 km wide × 1 km high.\nMap size: approximately 10.24 km × 10.24 km (full grid, including surrounding areas).\n\nTest creature page: Fell Thunderbrute →\n+\n−\nWhole world\nFit results\nMap view\n2D Flat\nDetailed 2D\n3D-style Relief\nIllustrated Terrain\nCoordinate grid\nMap display\nIcons & zoom\nIcon size\n-50%\n-25%\n-20%\nNormal\n+25%\n+50%\n+75%\n+100%\nHide icon totals\nReveal more icons as you zoom in\nIcons by Zoom Per Territory\nReduce icon congestion\nOff\n5% fewer\n10% fewer\n15% fewer\n20% fewer\n25% fewer\n30% fewer\n35% fewer\n40% fewer\n45% fewer\n50% fewer\n\nReduces overlap in crowded areas. Zoom in to reveal more.\n\nMap names\nTerrain & boundaries\nSearch\nEnemy card colours\nReset display\nDefaults restored\nShare view\nLink copied, ready for you to share.\n© 2026 - gameguides101.com"
+  },
+  {
+    "n": 44,
+    "action": "Show desktop sidebar again",
+    "result": "Control activated"
+  },
+  {
+    "n": 45,
+    "action": "Use map at mobile size 390 × 844",
+    "result": {
+      "viewport": 390,
+      "documentWidth": 390,
+      "observation": "Tested existing state and a fresh touch-enabled mobile context. Sidebar above map; controls cover upper terrain; no horizontal page overflow."
+    }
+  },
+  {
+    "n": 46,
+    "action": "Hide sidebar on mobile to use map",
+    "result": "Sidebar collapsed with Show control available; map controls occupy top of canvas."
+  },
+  {
+    "n": 47,
+    "action": "Add custom map pin",
+    "result": "Right-click opens Add pin here, name and House icon selected, Save pin closes editor."
+  },
+  {
+    "n": 48,
+    "action": "Reload to verify saved note and pin",
+    "result": "After reload, UX test route note remains; a new progress export contains UX test base pin with House icon and coordinates."
+  },
+  {
+    "n": 49,
+    "action": "Keyboard navigation through map controls",
+    "result": {
+      "tag": "BUTTON",
+      "label": "Zoom out",
+      "text": "−"
+    }
+  },
+  {
+    "n": 50,
+    "action": "Open shared view in fresh browser context",
+    "result": {
+      "urlLength": 4653,
+      "restoredLayer": "grid"
+    }
+  }
+]
